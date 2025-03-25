@@ -1,0 +1,90 @@
+.nav{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 2px;
+  /* border: 1px solid; */
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #299aba, #6ae6ff, #ffffff); 
+
+}
+
+.Navlogo{
+  width: 40px;
+  margin-left:10px ;
+  /* border: 2px solid; */
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.8s ease-in-out; /* Slower transition */
+}
+
+.Navlogo:hover {
+  transform: scale(1.2); /* Increases size */
+}
+
+.leftside{
+  display: flex;
+  
+}
+
+.rightside{
+  display: flex;
+  height: 100%;
+}
+.navLinks{
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid rgb(31, 116, 43); */
+  border-radius: 20px;
+  width: 120px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  /* transition: 1s; */
+  /* width: 40px; */
+  position: relative;
+  transition: all 0.4s ; 
+}
+
+.navLinks:hover{
+  background-color: rgb(97, 198, 74);
+}
+
+.addTest-modal{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: whitesmoke;
+  width: 350px;
+  box-sizing: border-box;
+  box-shadow: 10px 19px 10px rgba(139, 133, 133, 0.689);
+  padding: 20px;
+}
+
+.input-test-modal{
+display: flex;
+margin-bottom: 8px;
+justify-content: space-between;
+}
+
+
+.testLabel{
+  font-size: 18px;
+}
+
+.create-test{
+  width: 90px;
+  height: 20px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.create-test:hover{
+  background-color: rgb(97, 198, 74);
+}

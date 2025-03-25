@@ -1,0 +1,119 @@
+
+.modal{
+  position: fixed;
+  top: 0;
+  background-color: rgba(101, 104, 107,0.5);
+  width: 100%;
+  height: 100%;  
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-card{
+  border-radius: 15px;
+  width: 50%;
+  height: 65%;
+  background-color: azure;
+  display: flex;
+  /* justify-content: center; */
+   flex-direction: column; 
+   align-items: center;
+}
+.modaltitlebox{
+  
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 96%;
+  padding: 15px;
+  height: 30px;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-between;
+  /* border: 2px solid; */
+  background-color: rgba(41, 228, 66,0.8);
+}
+.x-btn{
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.x-btn:hover{
+  background-color: rgb(117, 110, 110);
+}
+
+.modal-body{
+  margin-top: 10px;
+  width: 98%;
+  height: 10%;
+  margin-left: 80px;
+
+  /* border: 1px solid; */
+} 
+
+.inputRow{
+  padding: 2px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+.inputBox{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  /* border: 1px solid; */
+}
+
+.inputLabel{
+  font-size: 18px;
+  color: rgb(36, 101, 167);
+  margin-bottom: 2px;
+}
+
+.input-modal::placeholder{
+  font-size: 17px;
+  color: rgb(36, 101, 167); 
+}
+.input-modal:focus{
+  outline: none;
+}
+
+.input-modal{
+  border: 2px solid rgb(36, 101, 167); 
+  border-radius: 10px;
+  width: 70%;
+  height: 20px;
+}
+
+.modalBtn{
+  margin-top: 3rem;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  /* border: 1px solid; */
+}
+
+.submit{
+  width: 20%;
+  height: 30%;
+  border: 2px solid;
+  /* margin-right: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* margin-right: 5rem; */
+  margin: 3rem;
+}
+
+.submit:hover{
+  background-color: rgba(41, 228, 66,0.8);
+}

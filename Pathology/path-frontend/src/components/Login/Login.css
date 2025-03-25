@@ -1,0 +1,211 @@
+/* General styles for the login container - identical to register */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e6f4ff 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Form styling - identical to register */
+.login-form {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(8, 72, 146, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  border-top: 5px solid #2a7fba;
+}
+
+/* Logo styling - identical to register */
+.logo-container {
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Title styling - identical to register */
+.login-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2a7fba;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.login-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #4fc3a1;
+}
+
+/* Input group - identical to register */
+.input-group {
+  margin: 20px 0;
+  position: relative;
+}
+
+/* Input field - identical to register */
+.input-field {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  margin: 5px 0;
+  border: 1px solid #d1e3f6;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #f8fbfe;
+  box-sizing: border-box;
+  color: #3a556a;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #2a7fba;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(42, 127, 186, 0.1);
+}
+
+.input-field::placeholder {
+  color: #a8c4e0;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2a7fba;
+  font-size: 18px;
+}
+
+/* Error message - identical to register */
+.error-message {
+  color: #e74c3c;
+  margin: 5px 0 0 5px;
+  font-size: 13px;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Button - identical to register */
+.login-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to right, #2a7fba, #4fc3a1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(42, 127, 186, 0.3);
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #236a9e, #43aa8b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(42, 127, 186, 0.4);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Link styling - identical to register */
+.register-link {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #5a7a9a;
+}
+
+.register-link p {
+  margin-bottom: 8px;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: #2a7fba;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 1px dashed transparent;
+}
+
+.register-link a:hover {
+  color: #236a9e;
+  border-bottom-color: #236a9e;
+}
+
+/* Forgot password link - matching style */
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.forgot-password a {
+  color: #5a7a9a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #2a7fba;
+  text-decoration: underline;
+}
+
+/* Form footer - identical to register */
+.form-footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #a8c4e0;
+  border-top: 1px solid #e1f0ff;
+  padding-top: 15px;
+}
+
+/* Responsive styling - identical to register */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 30px;
+    width: 90%;
+    margin: 20px 0;
+  }
+  
+  .login-title {
+    font-size: 24px;
+  }
+  
+  .input-field {
+    padding: 14px 14px 14px 40px;
+    font-size: 14px;
+  }
+  
+  .input-icon {
+    font-size: 16px;
+  }
+  
+  .login-button {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
