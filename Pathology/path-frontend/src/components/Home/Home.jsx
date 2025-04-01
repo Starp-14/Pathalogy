@@ -142,7 +142,7 @@ const Home = () => {
           )}
         </div>
       </div>
-      <div className="contactHome">
+      {/* <div className="contactHome">
         <div className="contactFormtitle" id="contact">
           Contact Us
         </div>
@@ -168,7 +168,12 @@ const Home = () => {
           </div>
           <div className="sendbtn">Send</div>
         </div>
-      </div>
+      </div> */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer></Footer>
       {clickAddtest && <Modal handleClose={handleClosebtn} />}
     </div>

@@ -17,6 +17,7 @@ app.use('/patient', patientRoutes);
 app.use('/test', testRoutes);
 app.use('/auth', authRoutes); // Add auth route for user authentication
 
+
 // Server configuration
 const PORT = 3000;
 app.listen(PORT, () => {

@@ -83,8 +83,8 @@ const Prescription = () => {
             </div>
 
             <div className="info-detail-age">
-              <div className="patient-name-attr">MobNo:</div>
-              <div className="patient-name-value">{patient?.mobile}</div>
+              <div className="patient-name-attr">Email: </div>
+              <div className="patient-name-value">{patient?.email}</div>
             </div>
 
             <div className="info-detail">
@@ -141,7 +141,7 @@ const Prescription = () => {
         </div>
 
         <div className="pdf-down-btn" onClick={downLoadPDF}>
-          Download
+          Download report
         </div>
       </div>
     </div>

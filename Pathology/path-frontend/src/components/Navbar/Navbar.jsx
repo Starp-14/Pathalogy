@@ -26,7 +26,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (clickAddtest && ref.current && !ref.current.contains(event.target)) {
-        setclickAddtest(false); // Corrected function name
+        setclickAddtest(false);
       }
     };
 
@@ -49,7 +49,6 @@ const Navbar = () => {
       .post("http://localhost:3000/test/post", input)
       .then((res) => {
         window.location.reload();
-        // console.log(res);
       })
       .catch((err) => {
         console.log(err);
@@ -74,7 +73,7 @@ const Navbar = () => {
       </div>
 
       <div className="rightside">
-        {/* Conditionally render options based on isAdmin */}
+        {/* Admin Options */}
         {user && user.isAdmin && (
           <>
             <div className="navLinks" onClick={handleClick}>
@@ -84,12 +83,7 @@ const Navbar = () => {
               Report
             </Link>
             <div className="navLinks">
-              <div
-                className="navAddtest"
-                onClick={() => {
-                  setclickAddtest(true);
-                }}
-              >
+              <div className="navAddtest" onClick={() => setclickAddtest(true)}>
                 Add test
               </div>
 
@@ -100,81 +94,61 @@ const Navbar = () => {
                     <input
                       type="text"
                       name="name"
-                      onChange={(e) => {
-                        handleInputs(e);
-                      }}
+                      onChange={handleInputs}
                       value={input.name}
                     />
                   </div>
-
                   <div className="input-test-modal">
                     <div className="testLabel">Description</div>
                     <input
                       type="text"
                       name="description"
-                      onChange={(e) => {
-                        handleInputs(e);
-                      }}
+                      onChange={handleInputs}
                       value={input.description}
                     />
                   </div>
-
                   <div className="input-test-modal">
                     <div className="testLabel">Price</div>
                     <input
                       type="text"
                       name="price"
-                      onChange={(e) => {
-                        handleInputs(e);
-                      }}
+                      onChange={handleInputs}
                       value={input.price}
                     />
                   </div>
-
                   <div className="input-test-modal">
                     <div className="testLabel">Image Link</div>
                     <input
                       type="text"
                       name="imgLink"
-                      onChange={(e) => {
-                        handleInputs(e);
-                      }}
+                      onChange={handleInputs}
                       value={input.imgLink}
                     />
                   </div>
-
                   <div className="input-test-modal">
                     <div className="testLabel">Fasting</div>
                     <input
                       type="text"
                       name="fasting"
-                      onChange={(e) => {
-                        handleInputs(e);
-                      }}
+                      onChange={handleInputs}
                       value={input.fasting}
                     />
                   </div>
-
                   <div className="input-test-modal">
                     <div className="testLabel">Normal range</div>
                     <input
                       type="text"
                       name="normalRange"
-                      onChange={(e) => {
-                        handleInputs(e);
-                      }}
+                      onChange={handleInputs}
                       value={input.normalRange}
                     />
                   </div>
-
                   <div className="input-test-modal">
                     <div className="testLabel">Abnormal</div>
                     <input
                       type="text"
                       name="abnormalRange"
-                      onChange={(e) => {
-                        handleInputs(e);
-                      }}
+                      onChange={handleInputs}
                       value={input.abnormalRange}
                     />
                   </div>
@@ -186,6 +160,13 @@ const Navbar = () => {
               )}
             </div>
           </>
+        )}
+
+        {/* View Report button for Normal Users */}
+        {user && !user.isAdmin && (
+          <Link to={"/view-report"} className="navLinks">
+            View Report
+          </Link>
         )}
       </div>
       {openCreate && <Modal handleClose={handleClose} />}
